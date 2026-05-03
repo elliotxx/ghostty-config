@@ -1,0 +1,94 @@
+# ========================
+# Ghostty Configuration
+# Migrated from WezTerm
+# ========================
+
+# ---- 字体 ----
+font-family = "Fira Code"
+font-size = 12
+
+# ---- 主题 ----
+theme = dracula
+
+# ---- 窗口外观 ----
+# 窗口内边距
+window-padding-x = 8
+window-padding-y = 8
+
+# 背景透明度
+background-opacity = 0.96
+
+# 标题栏
+macos-titlebar-style = transparent
+
+# 初始窗口大小
+window-width = 140
+window-height = 40
+
+# ---- Tab Bar ----
+window-show-tab-bar = auto
+
+# ---- 滚动 ----
+scrollback-limit = 50000000
+
+# ---- 光标 ----
+cursor-style = block
+cursor-style-blink = true
+
+# ---- 链接 ----
+link-previews = true
+
+# ========================
+# 快捷键绑定 (macOS)
+# ----
+
+# 关闭应用
+keybind = super+q=quit
+
+# Tab 操作
+keybind = super+t=new_tab
+keybind = super+w=close_surface
+
+# Tab 导航
+keybind = super+[=previous_tab
+keybind = super+]=next_tab
+keybind = super+1=goto_tab:1
+keybind = super+2=goto_tab:2
+keybind = super+3=goto_tab:3
+keybind = super+4=goto_tab:4
+keybind = super+5=goto_tab:5
+keybind = super+6=goto_tab:6
+keybind = super+7=goto_tab:7
+keybind = super+8=goto_tab:8
+keybind = super+9=last_tab
+
+# Window 操作
+keybind = super+n=new_window
+
+# Pane 操作
+keybind = super+backslash=new_split:right
+keybind = super+shift+backslash=new_split:down
+
+# Pane 导航
+keybind = super+shift+h=goto_split:left
+keybind = super+shift+j=goto_split:down
+keybind = super+shift+k=goto_split:up
+keybind = super+shift+l=goto_split:right
+
+# 复制/粘贴
+keybind = super+c=copy_to_clipboard:mixed
+keybind = super+v=paste_from_clipboard
+
+# 全屏
+keybind = super+enter=toggle_fullscreen
+
+# 搜索
+keybind = super+f=start_search
+
+# 字体大小
+keybind = super+==increase_font_size:1
+keybind = super+-=decrease_font_size:1
+
+# 退出 copy mode
+# Avoid intercepting bare Esc so Vim/Neovim can leave insert mode.
+# keybind = escape=end_search
